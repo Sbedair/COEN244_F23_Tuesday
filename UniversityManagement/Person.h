@@ -18,7 +18,7 @@ public:
 	int getAge() {
 		return 2023 - DoB.getYear();
 	}
-protected:
+
 	std::string getName() {
 		return name;
 	}

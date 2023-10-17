@@ -1,15 +1,17 @@
 #include <iostream>
 #include "Student.h"
+#include "Admin.h"
+#include "Professor.h"
 
 using namespace std;
 
 int main() {
-	Student* st = new Student(12345,0.1);
 
-	cout << st->getNames() << endl;
+	Date* date = new Date(4,20,1969);
 
-	st->setName("Jonathan");
+	Faculty* prof = new Professor("ECE", 45, 100, "Robert", *date);
+	Faculty* adm = new Admin("DOS", 45, 100, "Robert", *date);
 
-	cout << st->getNames();
-
+	cout << prof->getName() << " Gets : " << prof->Bonus() << " this year"<<endl;
+	cout << adm->getName() << " Gets : " << adm->Bonus() << " this year";
 }

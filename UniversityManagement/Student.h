@@ -8,7 +8,7 @@ private:
 	double GPA;
 
 public:
-	Student(int id, double gpa);
+	Student(int id, double gpa, std::string na, Date d);
 	void enroll();
 	void setName(std::string s);
 	std::string getNames() {
